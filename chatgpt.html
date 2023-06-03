@@ -1,0 +1,24 @@
+<script type='text/javascript'>
+    RED.events.on('editor:open', function () {
+        setTimeout(function () {
+            var askButton = $('<button type="button" class="red-ui-button">Ask ChatGPT</button>')
+            askButton.prependTo('.red-ui-tray-footer-left');
+            askButton.on('click', function () {
+                askButton.prop('value', 'Asking...');
+                askButton.prop('disabled', true);
+                $.ajax({
+                    url: "/chatgpt",
+                    type: "POST",
+                    contentType: "application/json",
+                    data: {}
+                }).done(function (data) {
+                    var editors = monaco.editor.getEditors();
+                    editors[editors.length-1].setValue(data.body);
+                }).always(function () {
+                    askButton.prop('value', 'Ask ChatGPT');
+                    askButton.prop('disabled', false);
+                });
+            });
+        }, 300);
+    });
+</script>
