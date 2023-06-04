@@ -1,11 +1,8 @@
 # node-red-contrib-plugin-chatgpt
 Ask ChatGPT plugin for Node-RED flow editor
 
-node-red-contrib-plugin-chatgpt
-Ask ChatGPT plugin for Node-RED flow editor
-
-Current plugin supports generating Markdown document by ChatGPT for Node-RED flows in tab only.
-With this plugin, you can use the generated document as a draft of what the flow is and how the flow is executed.
+This plugin supports generating Markdown document by ChatGPT for Node-RED flows in tab.
+You can use the generated document as a draft of what the flow is and how the flow is executed.
 
 ![](https://raw.githubusercontent.com/node-red-jp/node-red-contrib-plugin-chatgpt/main/askchatgpt.png)
 
