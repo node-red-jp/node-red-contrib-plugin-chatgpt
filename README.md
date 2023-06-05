@@ -37,3 +37,6 @@ How to use
 ![](https://raw.githubusercontent.com/node-red-jp/node-red-contrib-plugin-chatgpt/main/infotab.png)
 
 This plugin dramatically reduce time-consuming task to write the document of the Node-RED flow.
+
+## Note
+This plugin requires Node-RED v3.1 or later to work with Mermaid diagrams.
