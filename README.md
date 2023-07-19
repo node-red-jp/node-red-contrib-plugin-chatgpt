@@ -11,7 +11,7 @@ How to install
 
 Run the following command in your Node-RED user directory - typically `~/.node-red`
 
-        npm install node-red-contrib-plugin-chagpt
+        npm install node-red-contrib-plugin-chatgpt
 
 Set the OpenAI key to `OPENAI_API_KEY` as the environment variable. In macOS or Linux environment, you can use the `export` command to set the environment variable.
 
